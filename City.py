@@ -1,3 +1,12 @@
+import pandas as pd
+import networkx as nx
+from geopy.distance import geodesic
+import xml.etree.ElementTree as ET
+import requests
+import gmplot
+import numpy as np
+import math
+
 class City:
     def __init__(self, historic_speed):
         self.G = nx.Graph()
